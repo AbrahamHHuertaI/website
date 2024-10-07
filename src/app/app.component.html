@@ -1,0 +1,281 @@
+<div class="navbar">
+	<div class="menu">
+		<i (click)="toggleMenu()" class="ion-android-menu"></i>
+	</div>
+	<div class="buttons">
+		<button
+			(click)="openLink('https://bookings.setmore.com/scheduleappointment/8b5cca06-2482-4540-8faa-d6419e65ece1')"
+			class="login">AGENDA CITA</button>
+	</div>
+</div>
+<div id="menu" class="menu-sidebar">
+	<div class="row">
+		<div class="col-12 menu">
+			<i (click)="toggleMenu()" class="ion-close"></i>
+		</div>
+		<div class="col-12">
+			<span (click)="goTo('#services')">SERVICIOS</span>
+			<span (click)="goTo('#how-it-works')">CÓMO FUNCIONA</span>
+			<span (click)="goTo('#benefits')">BENEFICIOS</span>
+			<span (click)="goTo('#interface')">INTERFAZ</span>
+			<span (click)="goTo('#verticals')">VERTICALES DE SERVICIO</span>
+		</div>
+	</div>
+</div>
+<div class="scroll-nav">
+	<dotlottie-player src="{{scrollAnimation}}" background="transparent" speed="1" class="scroll" direction="1"
+		playMode="normal" loop autoplay></dotlottie-player>
+</div>
+<div class="sections">
+	<div class="section" id="home">
+		<div class="top">
+			<img src="../assets/logo.svg" alt="">
+		</div>
+		<app-earth></app-earth>
+		<div class="bottom">
+			<span>ASISTENTE VIRTUAL CON INTELIGENCIA <br> ARTIFICIAL AVANZADA</span>
+			<br>
+			<br>
+			<button
+				(click)="openLink('https://bookings.setmore.com/scheduleappointment/8b5cca06-2482-4540-8faa-d6419e65ece1')"
+				class="up">DESCRUBRE MÁS</button>
+		</div>
+	</div>
+	<div class="section scrollable-section services" data-section-title="Section One" id="services">
+		<img class="main-img" src="../assets/funciones.png" alt="">
+		<div id="renderer">
+			<canvas id="canvas"></canvas>
+		</div>
+		<div class="button-section">
+			<button class="gpt" style="border-radius: 30px;padding: 10px 30px;">POTENCIADO CON <img
+					src="../assets/chatgpt.svg" style="width: 30px;" alt=""> CHAT GPT</button>
+			<button
+				(click)="openLink('https://bookings.setmore.com/scheduleappointment/8b5cca06-2482-4540-8faa-d6419e65ece1')"
+				class="normal-button">CONSIGUE TU DEMO</button>
+		</div>
+	</div>
+	<div class="section scrollable-section howitworks" data-section-title="Section One" id="how-it-works">
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+				<div class="title">
+					<div class="title-text">IMPLEMENTA COOPER EN DOS SENCILLOS PASOS:</div>
+					<div class="title-border"></div>
+				</div>
+			</div>
+			<div class="col-sm-3"></div>
+			<div class="col-sm-12">
+				<video autoplay src="../assets/esquema.mp4" id="video-esquema"></video>
+			</div>
+		</div>
+	</div>
+	<div class="section scrollable-section benefits" data-section-title="Section One" id="benefits">
+		<div class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8 boxed">
+				<div class="row">
+					<div class="col-sm-12 text-center" style="padding-bottom: 40px;">
+						<br>
+						<p><b>DESCUBRE LOS BENEFICIOS:</b></p>
+						<br>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-8 right">
+								<p><b>A tu lado cada paso</b></p>
+								<p>No te preocupes por dudas, nuestro equipo siempre estará disponible para orientarte
+									en todo el proceso</p>
+							</div>
+							<div class="col-sm-4">
+								<img src="../assets/a-tu-lado.png" width="100%" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="../assets/app-movil.png" width="100%" alt="">
+							</div>
+							<div class="col-sm-8 left">
+								<p><b>App Móvil</b></p>
+								<p>Accede desde Android para atender conversaciones en todo momento, de manera intuitiva
+									y ágil.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12" style="padding-bottom: 20px;">
+						<br>
+						<br>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-8 right">
+								<p><b>Verificación oficial <br> de Whatsapp</b> <img src="../assets/wa.svg"
+										style="margin-left: 10px;" width="30px" alt=""></p>
+								<p>Demuestra credibilidad y aumenta la confianza de tus clientes a través de la asesoría
+									personalizada de Cooper</p>
+							</div>
+							<div class="col-sm-4">
+								<img src="../assets/verif-WA.png" width="100%" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="../assets/bot.png" width="100%" alt="">
+							</div>
+							<div class="col-sm-8 left">
+								<p><b>Bot sin código</b></p>
+								<p>Crea o modifica un Bot rápidamente y sin conocimientos técnicos.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12" style="padding-bottom: 20px;">
+						<br>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section scrollable-section interface" data-section-title="Section One" id="interface">
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6 text-center">
+				<div class="title">
+					<div class="title-text">CÓMO FUNCIONA COOPER</div>
+					<div class="title-border"></div>
+				</div>
+			</div>
+			<div class="col-sm-3"></div>
+
+			<div class="col-sm-12">
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="row">
+							<div class="col-sm-6">
+								<img id="im-1" style="width: 100%;margin-top: 20%;" src="../assets/funciona-1.png"
+									alt="">
+							</div>
+							<div class="col-sm-6">
+								<img id="im-2" style="width: 100%;" src="../assets/funciona-2.png" alt="">
+								<img id="im-3" style="width: 100%;" src="../assets/funciona-3.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 text-center">
+				<br>
+				<br>
+				<button
+					(click)="openLink('https://bookings.setmore.com/scheduleappointment/8b5cca06-2482-4540-8faa-d6419e65ece1')"
+					class="up">AGENDA UNA CITA</button>
+			</div>
+		</div>
+	</div>
+	<div class="section scrollable-section verticals" data-section-title="Section One" id="verticals">
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6 text-center">
+				<div class="title">
+					<div class="title-text">VERTICALES DEL SERVICIO</div>
+					<div class="title-border"></div>
+				</div>
+			</div>
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="image" (click)="onHoverImage(img.name)"
+						[ngClass]="{'col-sm-4': !img.space, 'col-sm-2': img.space}" *ngFor="let img of images">
+						<div class="overlay" id="{{img.name}}" *ngIf="!img.space"></div>
+						<img src="{{img.src}}" [hidden]="img.source == 2" *ngIf="!img.space" alt="">
+						<img src="{{img.hover}}" [hidden]="img.source == 1" *ngIf="!img.space" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section scrollable-section clients" data-section-title="Section One" id="clients">
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+				<div class="title">
+					<div class="title-text">EMPRESAS QUE HAN CONFIADO EN COOPER:</div>
+					<div class="title-border"></div>
+				</div>
+			</div>
+			<div class="col-sm-3"></div>
+			<div class="col-sm-12">
+				<div class="logos">
+					<img src="../assets/logos/andrea-logo.jpg" />
+					<img src="../assets/logos/dapa.jpg" />
+					<img src="../assets/logos/gocheck.jpg" />
+					<img src="../assets/logos/gto.jpg" />
+					<img src="../assets/logos/inceptio.jpg" />
+					<img src="../assets/logos/japami.jpg" />
+					<img src="../assets/logos/jumapa.jpg" />
+					<img src="../assets/logos/proquimed.jpg" />
+					<img src="../assets/logos/Rabelm.jpg" />
+					<img src="../assets/logos/sapal.jpg" />
+					<img src="../assets/logos/totalplay.jpg" />
+					<img src="../assets/logos/vadi.jpg" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section scrollable-section prices" data-section-title="Section One" id="prices">
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3 text-center">
+				<button class="cooper">
+					<img src="../assets/logo.svg" alt="">
+					<p>PRECIOS</p>
+				</button>
+			</div>
+
+			<div class="col-sm-3 text-center">
+				<button class="meta">
+					<img src="../assets/meta.png" alt="">
+					<p>PRECIOS OFICIALES</p>
+				</button>
+			</div>
+
+			<div class="col-sm-12 text-center">
+				<br>
+				<br>
+				<button
+					(click)="openLink('https://bookings.setmore.com/scheduleappointment/8b5cca06-2482-4540-8faa-d6419e65ece1')"
+					class="up">AGENDA UNA CITA</button>
+			</div>
+		</div>
+	</div>
+	<div class="section scrollable-section footers">
+		<img src="../assets/fondo-footer.png" style="width: 100%;" alt="">
+		<div class="logo-footer">
+			<img src="../assets/logo.svg" alt="">
+			<p>By your side at every step</p>
+		</div>
+		<div class="navbar-footer">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="../assets/logo.svg" alt="">
+				</div>
+				<div class="col-sm-8">
+					<span (click)="goTo('#services')">SERVICIOS</span>
+					<span (click)="goTo('#how-it-works')">CÓMO FUNCIONA</span>
+					<span (click)="goTo('#benefits')">BENEFICIOS</span>
+					<span (click)="goTo('#interface')">INTERFAZ</span>
+					<span (click)="goTo('#verticals')">VERTICALES DE SERVICIO</span>
+					<button
+					(click)="openLink('https://bookings.setmore.com/scheduleappointment/8b5cca06-2482-4540-8faa-d6419e65ece1')"
+					class="login">AGENDA CITA</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="stars"></div>
