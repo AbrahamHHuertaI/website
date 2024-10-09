@@ -26,30 +26,31 @@
   </script>
   
 
-    <script>
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        let timestamp = new Date().getTime();
-        js.src = "https://chat.cooperbot.com.mx/chat.min.js?d=" + timestamp; // Reemplaza con la ruta real de tu archivo chat.web.js
-        fjs.parentNode.insertBefore(js, fjs);
-        js.onload = function() {
-          // Una vez cargado el script, inicializar el chat
-          console.log('Chat cargado');
-          let chat = new Chat('371461252708822', {
-              // Configuración del chat
-              // Puedes encontrar más opciones en la documentación
-              // https://chat.cooperbot.com.mx/docs
-              iframeHeight: '600px',
-              bubbleBackgroundColor: '#4895ef',
-              borderRadius: '15px',
-              initialMessage: 'Chatea con nosotros'
-          }); // Reemplaza con el ID real del chat
-          chat.init();
-        };
-      }(document, 'script', 'chat-jssdk'));
-    </script>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      let timestamp = new Date().getTime();
+      js.src = "https://chat.cooperbot.com.mx/chat.min.js?d=" + timestamp; // Reemplaza con la ruta real de tu archivo chat.web.js
+      fjs.parentNode.insertBefore(js, fjs);
+      js.onload = function() {
+        // Una vez cargado el script, inicializar el chat
+        console.log('Chat cargado');
+        let chat = new Chat('371461252708822', {
+            // Configuración del chat
+            // Puedes encontrar más opciones en la documentación
+            // https://chat.cooperbot.com.mx/docs
+            iframeHeight: '600px',
+            bubbleBackgroundColor: '#7269ef',
+            borderRadius: '15px',
+            initialMessage: 'Chatea con nosotros',
+            darkMode: true
+        }); // Reemplaza con el ID real del chat
+        chat.init();
+      };
+    }(document, 'script', 'chat-jssdk'));
+  </script>
   
 </body>
 </html>
