@@ -30,7 +30,8 @@
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
-      js.src = "https://chat.cooperbot.com.mx/chat.min.js"; // Reemplaza con la ruta real de tu archivo chat.web.js
+      let timestamp = new Date().getTime();
+      js.src = "https://chat.cooperbot.com.mx/chat.min.js?d=" + timestamp; // Reemplaza con la ruta real de tu archivo chat.web.js
       fjs.parentNode.insertBefore(js, fjs);
       js.onload = function() {
         // Una vez cargado el script, inicializar el chat
